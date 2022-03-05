@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Monda&family=Oswald&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Monda&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Monda&family=Nunito&family=Quicksand&family=Varela+Round&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=K2D:wght@200&display=swap'); */
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../fonts/Nunito-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(../fonts/Quicksand-Regular.ttf) format('truetype');
+}
+
+html {
+  @apply bg-slate-900 text-slate-200;
+  overflow-y: overlay;
+  /* overflow-x: clip; */
+}
+
+h1 {
+  @apply text-xl;
+  margin: 0;
+}
+
+.animate__animated {
+  --animate-duration: 0.2s;
+}
+
+.scrollbarVisible::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+  border-radius: 100%;
+}
+
+/* ::-webkit-scrollbar-track {
+  @apply transition-colors duration-500;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply transition-colors duration-500;
+} */
+
+.scrollbarInvisible::-webkit-scrollbar-track {
+  @apply bg-slate-800/20;
+}
+
+.scrollbarVisible::-webkit-scrollbar-thumb {
+  @apply bg-primary-500/20;
+}
+
+.scrollbarVisible::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500/40;
+}
+
+.scrollbarInvisible::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.scrollbarInvisible::-webkit-scrollbar-thumb {
+  @apply bg-transparent;
+}
+
+.scrollbarInvisible::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500/40;
+}
